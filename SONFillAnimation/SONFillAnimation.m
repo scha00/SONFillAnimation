@@ -224,7 +224,7 @@
             transformAnimation = foldInAnimation;
             shadeAnimation = foldInShadeAnimation;
             break;
-        } 
+        }
             
         case SONFillAnimationTypeFoldOut:       // Fold out = Default
         case SONFillAnimationTypeDefault:
@@ -274,13 +274,16 @@
     // Copy layer to make an image
     view.alpha = 1.0;
     UIGraphicsBeginImageContextWithOptions(view.frame.size, NO, 0.0f);
-    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    NSLog(@"%d", [view drawViewHierarchyInRect:CGRectMake(0, 0, view.bounds.size.width, view.bounds.size.height)]);
+    
+    //[view.layer renderInContext:UIGraphicsGetCurrentContext()];
     
     UIImage *layerImage = UIGraphicsGetImageFromCurrentImageContext();
     CGSize imageSize = layerImage.size;
     UIGraphicsEndImageContext();
     
     view.alpha = 0.0;
+    
     UIView *overlayView = [[UIView alloc] initWithFrame:view.frame];
     overlayView.backgroundColor = [UIColor clearColor];
     [view.superview addSubview:overlayView];
@@ -341,9 +344,18 @@
 
 - (void)animateView:(UIView *)view completion:(void (^)(void))block
 {
-    NSTimeInterval completionDelay;
-    completionDelay = [self animateAllInView:view];
-    [self performBlock:block afterDelay:completionDelay];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        
+        //view.frame = CGRectMake(3000, 3000, view.frame.size.width, view.frame.size.height);
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            view.alpha = 1;
+        });
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            NSTimeInterval completionDelay;
+            completionDelay = [self animateAllInView:view];
+            [self performBlock:block afterDelay:completionDelay];
+        });
+    });
 }
 
 - (void)animateView:(UIView *)view delay:(NSTimeInterval)delay completion:(void (^)(void))block
