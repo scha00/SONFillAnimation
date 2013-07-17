@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1137C68C17952B7C00ECBAC4 /* sondev120.png in Resources */ = {isa = PBXBuildFile; fileRef = 1137C68B17952B7C00ECBAC4 /* sondev120.png */; };
 		11A6A449178CF64D00C8BBDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A448178CF64D00C8BBDF /* Foundation.framework */; };
 		11A6A44B178CF64D00C8BBDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A44A178CF64D00C8BBDF /* CoreGraphics.framework */; };
 		11A6A44D178CF64D00C8BBDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A44C178CF64D00C8BBDF /* UIKit.framework */; };
@@ -21,6 +22,8 @@
 		11A6A46A178CF64D00C8BBDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A44C178CF64D00C8BBDF /* UIKit.framework */; };
 		11A6A472178CF64D00C8BBDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11A6A470178CF64D00C8BBDF /* InfoPlist.strings */; };
 		11A6A474178CF64D00C8BBDF /* SONFillAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A473178CF64D00C8BBDF /* SONFillAnimationTests.m */; };
+		11A6A47F178CF79B00C8BBDF /* SONFillAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A6A47E178CF79B00C8BBDF /* SONFillAnimation.m */; };
+		11A6A484178E158F00C8BBDF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6A483178E158F00C8BBDF /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1137C6881794DB5D00ECBAC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1137C68B17952B7C00ECBAC4 /* sondev120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sondev120.png; sourceTree = "<group>"; };
 		11A6A445178CF64D00C8BBDF /* SONFillAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SONFillAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6A448178CF64D00C8BBDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11A6A44A178CF64D00C8BBDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,7 +49,6 @@
 		11A6A456178CF64D00C8BBDF /* SONFillAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SONFillAnimation-Prefix.pch"; sourceTree = "<group>"; };
 		11A6A457178CF64D00C8BBDF /* SONAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SONAppDelegate.h; sourceTree = "<group>"; };
 		11A6A458178CF64D00C8BBDF /* SONAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SONAppDelegate.m; sourceTree = "<group>"; };
-		11A6A45B178CF64D00C8BBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11A6A45D178CF64D00C8BBDF /* SONViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SONViewController.h; sourceTree = "<group>"; };
 		11A6A45E178CF64D00C8BBDF /* SONViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SONViewController.m; sourceTree = "<group>"; };
 		11A6A460178CF64D00C8BBDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +57,9 @@
 		11A6A46F178CF64D00C8BBDF /* SONFillAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SONFillAnimationTests-Info.plist"; sourceTree = "<group>"; };
 		11A6A471178CF64D00C8BBDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11A6A473178CF64D00C8BBDF /* SONFillAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SONFillAnimationTests.m; sourceTree = "<group>"; };
+		11A6A47D178CF79B00C8BBDF /* SONFillAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONFillAnimation.h; sourceTree = "<group>"; };
+		11A6A47E178CF79B00C8BBDF /* SONFillAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONFillAnimation.m; sourceTree = "<group>"; };
+		11A6A483178E158F00C8BBDF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A6A484178E158F00C8BBDF /* QuartzCore.framework in Frameworks */,
 				11A6A44B178CF64D00C8BBDF /* CoreGraphics.framework in Frameworks */,
 				11A6A44D178CF64D00C8BBDF /* UIKit.framework in Frameworks */,
 				11A6A449178CF64D00C8BBDF /* Foundation.framework in Frameworks */,
@@ -101,10 +109,8 @@
 		11A6A447178CF64D00C8BBDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				11A6A448178CF64D00C8BBDF /* Foundation.framework */,
-				11A6A44A178CF64D00C8BBDF /* CoreGraphics.framework */,
-				11A6A44C178CF64D00C8BBDF /* UIKit.framework */,
-				11A6A467178CF64D00C8BBDF /* XCTest.framework */,
+				11A6A482178E157800C8BBDF /* BasicFrameworks */,
+				11A6A481178E155900C8BBDF /* AddedFrameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +124,7 @@
 				11A6A45D178CF64D00C8BBDF /* SONViewController.h */,
 				11A6A45E178CF64D00C8BBDF /* SONViewController.m */,
 				11A6A460178CF64D00C8BBDF /* Images.xcassets */,
+				11A6A480178CF7AA00C8BBDF /* Class */,
 				11A6A44F178CF64D00C8BBDF /* Supporting Files */,
 			);
 			path = SONFillAnimation;
@@ -126,6 +133,7 @@
 		11A6A44F178CF64D00C8BBDF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1137C68B17952B7C00ECBAC4 /* sondev120.png */,
 				11A6A450178CF64D00C8BBDF /* SONFillAnimation-Info.plist */,
 				11A6A451178CF64D00C8BBDF /* InfoPlist.strings */,
 				11A6A454178CF64D00C8BBDF /* main.m */,
@@ -150,6 +158,34 @@
 				11A6A470178CF64D00C8BBDF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11A6A480178CF7AA00C8BBDF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				11A6A47D178CF79B00C8BBDF /* SONFillAnimation.h */,
+				11A6A47E178CF79B00C8BBDF /* SONFillAnimation.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		11A6A481178E155900C8BBDF /* AddedFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11A6A483178E158F00C8BBDF /* QuartzCore.framework */,
+			);
+			name = AddedFrameworks;
+			sourceTree = "<group>";
+		};
+		11A6A482178E157800C8BBDF /* BasicFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11A6A448178CF64D00C8BBDF /* Foundation.framework */,
+				11A6A44A178CF64D00C8BBDF /* CoreGraphics.framework */,
+				11A6A44C178CF64D00C8BBDF /* UIKit.framework */,
+				11A6A467178CF64D00C8BBDF /* XCTest.framework */,
+			);
+			name = BasicFrameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A6A461178CF64D00C8BBDF /* Images.xcassets in Resources */,
+				1137C68C17952B7C00ECBAC4 /* sondev120.png in Resources */,
 				11A6A453178CF64D00C8BBDF /* InfoPlist.strings in Resources */,
 				11A6A45C178CF64D00C8BBDF /* Main.storyboard in Resources */,
 			);
@@ -250,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A6A47F178CF79B00C8BBDF /* SONFillAnimation.m in Sources */,
 				11A6A45F178CF64D00C8BBDF /* SONViewController.m in Sources */,
 				11A6A455178CF64D00C8BBDF /* main.m in Sources */,
 				11A6A459178CF64D00C8BBDF /* SONAppDelegate.m in Sources */,
@@ -286,7 +324,7 @@
 		11A6A45A178CF64D00C8BBDF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				11A6A45B178CF64D00C8BBDF /* Base */,
+				1137C6881794DB5D00ECBAC4 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -378,6 +416,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SONFillAnimation/SONFillAnimation-Prefix.pch";
 				INFOPLIST_FILE = "SONFillAnimation/SONFillAnimation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -391,6 +430,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SONFillAnimation/SONFillAnimation-Prefix.pch";
 				INFOPLIST_FILE = "SONFillAnimation/SONFillAnimation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -455,6 +495,7 @@
 				11A6A479178CF64D00C8BBDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11A6A47A178CF64D00C8BBDF /* Build configuration list for PBXNativeTarget "SONFillAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +504,7 @@
 				11A6A47C178CF64D00C8BBDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
