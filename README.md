@@ -70,3 +70,10 @@ Demo
 
 - Watch demo: [Youtube](http://youtu.be/tsA6Fu4mPww)
 
+
+Links
+----------------
+
+- Website: [www.soncode.com](http://www.soncode.com)
+- Blog: [tumblr.soncode.com](http://tumblr.soncode.com)
+
