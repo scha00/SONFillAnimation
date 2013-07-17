@@ -276,8 +276,6 @@
     UIGraphicsBeginImageContextWithOptions(view.frame.size, NO, 0.0f);
     NSLog(@"%d", [view drawViewHierarchyInRect:CGRectMake(0, 0, view.bounds.size.width, view.bounds.size.height)]);
     
-    //[view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    
     UIImage *layerImage = UIGraphicsGetImageFromCurrentImageContext();
     CGSize imageSize = layerImage.size;
     UIGraphicsEndImageContext();
@@ -345,8 +343,6 @@
 - (void)animateView:(UIView *)view completion:(void (^)(void))block
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        
-        //view.frame = CGRectMake(3000, 3000, view.frame.size.width, view.frame.size.height);
         dispatch_sync(dispatch_get_main_queue(), ^{
             view.alpha = 1;
         });
