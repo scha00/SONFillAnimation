@@ -1,7 +1,7 @@
 SONFillAnimation
 ================
 
-'SONFillAnimation' is a class that divides the target UIView into a grid and creates an animation for each piece in a specified order.
+`SONFillAnimation` is a class that divides the target UIView into a grid and creates an animation for each piece in a specified order.
 
 
 Usage
