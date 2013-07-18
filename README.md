@@ -53,7 +53,7 @@ You can assign on of the followings to `animationType`:
 - SONFillAnimationTypeCustom
 
 The type `SONFillAnimationTypeDefault` is identical to the type `SONFillAnimationTypeFoldOut`.  
-If you would prefer to use a custom `CAAnimation`, set this property to `SONFillAnimationTypeCustom`, and assign custom `CAAnimation` object to `transformAnimation` property.  
+If you would prefer to use a custom `CAAnimation`, set this property to `SONFillAnimationTypeCustom`, and assign a custom `CAAnimation` object to `transformAnimation` property.  
 
 `animateToHide` is a BOOL property that can be used when you're using a custom animation. The alpha property of the animated view will become 0.0 after the animation completes.  
 `transformAnimation` is a property that you can assign `CAAnimation` object when using a custom animation.  
